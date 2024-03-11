@@ -36,6 +36,8 @@ cuda_ver = os.environ.get("CUMM_CUDA_VERSION", "")
 #     cuda_ver = version_str
 
 if cuda_ver:
+    print("CUDA Version:")
+    print(cuda_ver)
     cuda_ver_str = cuda_ver.replace(".", "") # 10.2 to 102
 
     RELEASE_NAME += "-cu{}".format(cuda_ver_str)
